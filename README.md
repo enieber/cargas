@@ -1,1 +1,4 @@
-# cargas
+# Cargas
+
+* Positiva
+* Negativa
