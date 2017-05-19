@@ -8,12 +8,12 @@ function [ fieldE, vectorR ,normR ] = Efield(q,p0,p)
 eps = 8.854187817e-12;
 vectorR = p-p0;
 normR = norm(vectorR);
-fieldE = 1/(4*%pi*eps)*q0*(p-p0)./(norm(p-p0).^3+%eps);
+fieldE = 1/(4*%pi*eps)*q0*(p-p0)./(norm(p-p0).^3+%eps);//fórmula do campo eletrico
 endfunction
 
 function E = Cfield(q0,p0,x,y)
-    for i = 1:length(x)
-        for j = 1:length(y)
+    for i = 1:length(x)//Isso é matriz??
+        for j = 1:length(y)//Isso tambem??
             p(i,j,:) = [x(i) y(j)];
             E(i,j,:) = Efield(q0,p0,squeeze(p(i,j,:))');
         end

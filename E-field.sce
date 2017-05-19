@@ -3,12 +3,12 @@ clc
 xdel(winsid())
 
 
-exec('field.sci')
+exec('/home/enielma/Área de Trabalho/cargas/Efield.sci')
 x = -3:0.5:3;
 y = -3:0.5:3;
 
         
-q1 = 1e-9;
+q1 = 1e-9;//Esses quatros pontos que determina a malha??
 p1 = [-1 0];
 
 q2 = -1e-9;
@@ -29,3 +29,5 @@ Ey = e1y + e2y;
 
 figure;
 champ(x, y, Ex,Ey)
+
+
